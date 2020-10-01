@@ -2,7 +2,6 @@ package desafioDigitalHouse
 
 class Aluno(val nome: String, var sobrenome: String, val codigoAluno: Int) {
 
-
     override fun equals(other: Any?): Boolean {
         if (this === other) return true
 
