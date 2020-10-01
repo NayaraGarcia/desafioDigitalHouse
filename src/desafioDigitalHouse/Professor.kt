@@ -1,3 +1,5 @@
+package desafioDigitalHouse
+
 abstract class Professor (val nome: String, var sobrenome: String, var tempoDeCasa: Int, val codigoProfessor: Int) {
 
     override fun equals(other: Any?): Boolean {

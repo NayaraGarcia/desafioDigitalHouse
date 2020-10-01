@@ -1,3 +1,5 @@
+package desafioDigitalHouse
+
 class Aluno(val nome: String, var sobrenome: String, val codigoAluno: Int) {
 
 
