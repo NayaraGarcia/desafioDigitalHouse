@@ -1,6 +1,9 @@
 package desafioDigitalHouse
 
-abstract class Professor (val nome: String, var sobrenome: String, var tempoDeCasa: Int, val codigoProfessor: Int) {
+abstract class Professor(val nome: String,
+                         var sobrenome: String,
+                         var tempoDeCasa: Int,
+                         val codigoProfessor: Int) {
 
     override fun equals(other: Any?): Boolean {
         if (this === other) return true
@@ -10,4 +13,5 @@ abstract class Professor (val nome: String, var sobrenome: String, var tempoDeCa
         if (codigoProfessor == other.codigoProfessor) return true
 
         return true
-    }}
+    }
+}
