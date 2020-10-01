@@ -1,0 +1,2 @@
+class ProfessorAdjunto (horasMonitoria: Int) {
+}
