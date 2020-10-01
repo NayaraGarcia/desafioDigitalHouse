@@ -1,0 +1,2 @@
+class Professortitular (especialidade: String) {
+}
