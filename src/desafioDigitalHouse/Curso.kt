@@ -4,9 +4,17 @@ class Curso(var nome: String, var codigoCurso: Int) {
 
     var alunos = mutableMapOf<Int, Aluno>()
     var vagasDisponiveis: Int = 0
+    var professoresAlocados = mutableMapOf<Int, Professor>()
 
     constructor(nome: String, codigoCurso: Int, _vagasDisponiveis: Int) : this(nome, codigoCurso) {
         vagasDisponiveis = _vagasDisponiveis
+    }
+
+    init {
+        println("Curso registrado com sucesso !!")
+        println("Nome do Curso: $nome")
+        println("Código: $codigoCurso")
+
     }
 
     override fun equals(other: Any?): Boolean {
@@ -31,11 +39,15 @@ class Curso(var nome: String, var codigoCurso: Int) {
     }
 
     // Esta dando erro
+
     fun excluirAluno(umAluno: Aluno) {
         alunos.remove(umAluno)
         println("Aluno ${umAluno.nome} ${umAluno.sobrenome} foi excluído. ")
         vagasDisponiveis++
     }
 
+    fun alocaProfessores(professor: Professor) {
+        professoresAlocados[professor.codigoProfessor] = professor
+    }
 
 }
