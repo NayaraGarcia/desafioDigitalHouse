@@ -6,8 +6,8 @@ class Curso(var nome: String, var codigoCurso: Int) {
     var vagasDisponiveis: Int = 0
     var professoresAlocados = mutableMapOf<Int, Professor>()
 
-    constructor(nome: String, codigoCurso: Int, _vagasDisponiveis: Int) : this(nome, codigoCurso) {
-        vagasDisponiveis = _vagasDisponiveis
+    constructor(nome: String, codigoCurso: Int, vagasDisponiveis1: Int) : this(nome, codigoCurso) {
+        vagasDisponiveis = vagasDisponiveis1
     }
 
     init {
@@ -38,13 +38,13 @@ class Curso(var nome: String, var codigoCurso: Int) {
         return false
     }
 
-    // Esta dando erro
-
-    fun excluirAluno(umAluno: Aluno) {
-        alunos.remove(umAluno)
-        println("Aluno ${umAluno.nome} ${umAluno.sobrenome} foi excluído. ")
-        vagasDisponiveis++
-    }
+//    // Esta dando erro
+//
+//    fun excluirAluno(umAluno: Aluno) {
+//        alunos.remove(umAluno)
+//        println("Aluno ${umAluno.nome} ${umAluno.sobrenome} foi excluído. ")
+//        vagasDisponiveis++
+//    }
 
     fun alocaProfessores(professor: Professor) {
         professoresAlocados[professor.codigoProfessor] = professor

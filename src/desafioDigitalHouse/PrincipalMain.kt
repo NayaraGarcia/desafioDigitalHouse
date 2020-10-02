@@ -30,9 +30,10 @@ fun main(){
     manager.registrarAluno("Aluno", "5",  5)
     manager.matricularAluno(3, 20002)
     manager.matricularAluno(4, 20002)
-    manager.matricularAluno(5, 20002) //não dá pra matricular
+    manager.matricularAluno(5, 20002)
 
-    manager.cursos[20002]!!.excluirAluno(manager.alunos[3]!!)
+//Esta dando erro !!
+// manager.cursos[20002]!!.excluirAluno(manager.alunos[3]!!)
 
     manager.matricularAluno(5, 20002)
 
